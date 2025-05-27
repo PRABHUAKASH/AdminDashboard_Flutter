@@ -2,7 +2,6 @@ import 'package:atmc_admin_dashboard/Screens/components/Login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'Screens/dashboard_screen.dart';
 import 'controllers/controller.dart';
 
 void main() {
@@ -20,9 +19,9 @@ class MyApp extends StatelessWidget {
       ),
       home: MultiProvider(
         providers: [ChangeNotifierProvider(create: (context) => Controller())],
-        // child: LoginPage(
-        child: DashboardScreen(),
-        // ),
+        child: LoginPage(
+            // child: DashboardScreen(),
+            ),
         // child: DashboardScreen(),
       ),
     );
